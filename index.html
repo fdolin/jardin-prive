@@ -334,6 +334,47 @@
             font-style: italic;
         }
 
+        /* Map Section */
+        .map-section {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .map-header {
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .map-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .map-header p {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+        }
+
+        .map-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            height: 420px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+            border: 1px solid rgba(45, 90, 61, 0.15);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
         /* Contact Section */
         .contact-section {
             padding: 8rem 5%;
@@ -446,6 +487,14 @@
                 height: 240px;
             }
 
+            .map-container {
+                height: 320px;
+            }
+
+            .map-header h2 {
+                font-size: 2rem;
+            }
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
@@ -484,6 +533,7 @@
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#offres">Nos Offres</a></li>
+                <li><a href="#acces">Accès</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -581,6 +631,23 @@
             </div>
         </div>
     </section>
+
+    <!-- Map Section -->
+    <section class="map-section fade-in-section" id="acces">
+        <div class="map-header">
+            <h2>Nous trouver</h2>
+            <p>3 rue Mandron, 33000 Bordeaux - aux portes du Jardin Public</p>
+        </div>
+        <div class="map-container">
+            <iframe
+                title="Carte de localisation du Jardin Privé, 3 rue Mandron à Bordeaux"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.5877%2C44.8458%2C-0.5777%2C44.8528&amp;layer=mapnik&amp;marker=44.8493%2C-0.5827"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
