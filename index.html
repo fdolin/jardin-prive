@@ -280,6 +280,14 @@
             overflow: hidden;
         }
 
+        .offer-images img {
+            transition: transform 0.6s ease;
+        }
+
+        .offer-card:hover .offer-images img {
+            transform: scale(1.05);
+        }
+
         .offer-image-placeholder {
             width: 100%;
             height: 100%;
@@ -423,9 +431,21 @@
             .contact-info {
                 gap: 3rem;
             }
+
+            .hero img {
+                height: 360px !important;
+            }
         }
 
         @media (max-width: 640px) {
+            .hero img {
+                height: 260px !important;
+            }
+
+            .offer-images {
+                height: 240px;
+            }
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
@@ -477,7 +497,7 @@
                 <p class="subtitle">Un espace de travail inspirant dans un cadre d'exception </p>
                 <p class="address">📍 3 rue Mandron 33000 Bordeaux</p>
             </div>
-                <img src="photos/photo-coworking-jardin-prive.jpg" alt="Le Jardin Privé votrecoworking" style="width: 80%; height: 80%; object-fit: cover; border-radius: 12px;">
+                <img src="photos/couverture.jpg" alt="Espace de coworking Le Jardin Privé à Bordeaux" style="width: 100%; height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);">
         </div>
     </section>
 
@@ -497,10 +517,7 @@
             <!-- Offer 1 -->
             <div class="offer-card fade-in-section">
                 <div class="offer-images">
-                    <div class="offer-image-placeholder">
-                        Photo de l'offre 1<br>
-                        (espace open-space ou poste fixe)
-                    </div>
+                    <img src="photos/offre1.jpg" alt="Poste individuel en espace partagé" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
                 <div class="offer-content">
                     <h3>Poste Individuel mi-temps</h3>
@@ -522,10 +539,7 @@
             <!-- Offer 2 -->
             <div class="offer-card fade-in-section">
                 <div class="offer-images">
-                    <div class="offer-image-placeholder">
-                        Photo de l'offre 2<br>
-                        (bureau privatif)
-                    </div>
+                    <img src="photos/offre2.jpg" alt="Poste individuel plein temps en open space" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
                  <div class="offer-content">
                     <h3>Poste Individuel plein temps</h3>
@@ -547,10 +561,7 @@
             <!-- Offer 3 -->
             <div class="offer-card fade-in-section">
                 <div class="offer-images">
-                    <div class="offer-image-placeholder">
-                        Photo de l'offre 3<br>
-                        (bureau + salle de réunion)
-                    </div>
+                    <img src="photos/offre3.jpg" alt="Bureau fermé privatif" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
                  <div class="offer-content">
                     <h3>Bureau Fermé</h3><br><br>
